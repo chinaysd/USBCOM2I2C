@@ -1,0 +1,7 @@
+".\obj\STARTUP.obj",
+".\obj\main.obj",
+".\obj\INIT.obj",
+".\obj\S_TouchKeyCFG.obj",
+".\lib\SC93F8XXX_HighSensitive_Lib_T1_V0.0.2.LIB" 
+TO ".\obj\E201.TouchKey.SocMCU" 
+PRINT(".\lst\E201.TouchKey.m51") RAMSIZE(256) 

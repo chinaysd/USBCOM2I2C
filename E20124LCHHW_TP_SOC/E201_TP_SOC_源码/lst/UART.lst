@@ -1,0 +1,66 @@
+C51 COMPILER V9.52.0.0   UART                                                              03/20/2018 14:40:43 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE UART
+OBJECT MODULE PLACED IN .\obj\UART.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE C\UART.C BROWSE INCDIR(.\H;.\lib) DEBUG OBJECTEXTEND PRINT(.\lst\UART.lst) 
+                    -OBJECT(.\obj\UART.obj)
+
+line level    source
+
+   1          #include "h\UART.h"
+   2          #include "H/SC93F833X_C.H"
+   3          
+   4          void uart_init(void)
+   5          {
+   6   1              OPINX=0xC1;
+   7   1              
+   8   1      //      OPREG=0xA8;//6M
+   9   1              OPREG=0x98;//12M        
+  10   1              OPINX=0xC2;
+  11   1              OPREG=0x00;
+  12   1              
+  13   1              WDTCON=0x10;
+  14   1              
+  15   1              P1CON=0xFF;
+  16   1              
+  17   1              P1CON|=1<<3;
+  18   1              P13=1;
+  19   1              P1CON&=~(1<<2);
+  20   1              P12=1;
+  21   1              
+  22   1              //使用定时器1
+  23   1              SCON=0x50;
+  24   1              PCON|=0x80;
+  25   1              T2CON&=~0x30;
+  26   1              TMCON|=0x02;
+  27   1              TMOD&=0x0f;
+  28   1              TMOD|=0x20;
+  29   1              TH1=256-Fsys/BaudRate/16/2*2;
+  30   1              TR1=0;
+  31   1              TR1=1;
+  32   1              EUART=0;
+  33   1      }
+  34          
+  35          void UART_TX_byte(unsigned char DATA)
+  36          {
+  37   1         TI = 0;
+  38   1         SBUF = DATA;
+  39   1         while(!TI);
+  40   1      }
+  41          
+  42          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     64    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

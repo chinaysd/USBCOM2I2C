@@ -1,0 +1,50 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\MIAN_杨\项目\E201\E201赛元方案\E201.TK.SOC.Program(小板)\E201.TouchKey.SocMCU.uvproj
+Project File Date:  03/29/2018
+
+<h2>Output:</h2>
+Load "F:\\MIAN_杨\\项目\\E201\\E201赛元方案\\E201.TK.SOC.Program(小板)\\obj\\E201.TouchKey.SocMCU" 
+仿真器已连接.
+*** Error: Flash Write Failed at 0000
+Load "F:\\MIAN_杨\\项目\\E201\\E201赛元方案\\E201.TK.SOC.Program(小板)\\obj\\E201.TouchKey.SocMCU" 
+仿真器已连接.
+compiling INIT.C...
+C\INIT.C - 0 Error(s), 0 Warning(s).
+compiling INIT.C...
+C\INIT.C - 0 Error(s), 0 Warning(s).
+Build target 'E201 TouchKey'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1_INIT?INIT
+Program Size: data=55.3 xdata=101 code=3750
+creating hex file from ".\obj\E201.TouchKey.SocMCU"...
+".\obj\E201.TouchKey.SocMCU" - 0 Error(s), 1 Warning(s).
+Build target 'E201 TouchKey'
+assembling STARTUP.A51...
+compiling main.c...
+compiling INIT.C...
+compiling S_TouchKeyCFG.C...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1_INIT?INIT
+Program Size: data=55.3 xdata=101 code=3750
+creating hex file from ".\obj\E201.TouchKey.SocMCU"...
+".\obj\E201.TouchKey.SocMCU" - 0 Error(s), 1 Warning(s).
+Load "F:\\MIAN_杨\\项目\\E201\\E201赛元方案\\E201.TK.SOC.Program(小板)\\obj\\E201.TouchKey.SocMCU" 
+仿真器已连接.
+Load "F:\\MIAN_杨\\项目\\E201\\E201赛元方案\\E201.TK.SOC.Program(小板)\\obj\\E201.TouchKey.SocMCU" 
+仿真器已连接.
+Load "F:\\MIAN_杨\\项目\\E201\\E201赛元方案\\E201.TK.SOC.Program(小板)\\obj\\E201.TouchKey.SocMCU" 
+仿真器已连接.
+Flash Write Done: 3753 bytes programmed.
+CheckSum = 0x752c
+Flash Verify Done: 3756 bytes verified.
+Load "F:\\MIAN_杨\\项目\\E201\\E201赛元方案\\E201.TK.SOC.Program(小板)\\obj\\E201.TouchKey.SocMCU" 
+仿真器已连接.
+Flash Write Done: 3753 bytes programmed.
+CheckSum = 0x752c
+Flash Verify Done: 3756 bytes verified.

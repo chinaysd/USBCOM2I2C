@@ -1,0 +1,68 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+DefaultDir=D:\Develop\@eMoMo\@@2018\E201\E201.TK.SOC.Program
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.H *.C
+[Project tree]
+E201.TK.SOC
+	+E201.TK.SOC
+		+C
+			C\SYSTEM.C
+			C\main.c
+			C\key.c
+			C\INIT.C
+		+H
+			H\UART.H
+			H\SYSTEM.H
+			H\SC93F833X_C.H
+			H\SC93F833X_ASM.H
+			H\key.h
+			H\INIT.H
+		+lib
+			lib\SensorMethod.h
+			lib\S_TouchKeyCFG.h
+			lib\S_TouchKeyCFG.C
+		-lst
+		-obj
+[Open project files]
+0=C\SYSTEM.C
+1=C\main.c
+2=C\key.c
+3=H\SYSTEM.H
+4=H\INIT.H
+5=H\SC93F833X_C.H
+6=C\INIT.C
+[Selected Project Files]
+Main=
+Selected=C\INIT.C
+[C\SYSTEM.C]
+TopLine=3
+Caret=60,8
+[C\main.c]
+TopLine=1
+Caret=12,17
+[C\key.c]
+TopLine=1
+Caret=4,8
+[H\SYSTEM.H]
+TopLine=1
+Caret=1,10
+[H\INIT.H]
+TopLine=1
+Caret=22,19
+[H\SC93F833X_C.H]
+TopLine=16
+Caret=10,33
+[C\INIT.C]
+TopLine=15
+Caret=40,46

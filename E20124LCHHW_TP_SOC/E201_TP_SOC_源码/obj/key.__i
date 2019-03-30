@@ -1,0 +1,1 @@
+"C\key.c" BROWSE INCDIR(.\H;.\lib) DEBUG OBJECTEXTEND PRINT(.\lst\key.lst) OBJECT(.\obj\key.obj)
